@@ -1,0 +1,81 @@
+package point;
+
+public class point {
+	private int x;
+	private int y;
+	public int xy;
+
+	public point(){
+		x=0;
+		y=0;
+	}
+	public point(int x, int y){
+		this.x=x;
+		this.y=y;
+	}
+	public int getX() {
+		return x;
+	}
+	public void setX(int x) {
+		this.x = x;
+	}
+	public int getY() {
+		return y;
+	}
+	public void setY(int y) {
+		this.y = y;
+	}
+	public String mensaje(){
+		String mensaje = " X y Y son: ";
+		return mensaje;
+	}
+	public int getXY(){
+		return xy;
+	}
+	public void setXY(int x, int y){
+		this.x=x;
+		this.y=y;
+	}
+	public double Distancia(int x, int y){
+		double distancia = (x*x)+(y*y);
+		double Distancia = Math.pow(distancia,(1/2));
+		return Distancia;
+	}
+	public double distanciaOtro(int x1, int y1){
+		double distanciaOtro = 20;
+		return distanciaOtro;
+	}
+	public double distance(){
+		double distance = 10;
+		return distance;
+	}
+	}
+
+Aplicación
+package point;
+
+public class pointt {
+	public static void main(String [] args){
+		point p1 = new point();
+		System.out.println(p1.mensaje()+ " x= "
+				+p1.getX()+", y= "+p1.getY());
+		p1.Distancia(6,9);
+		double Distancia = p1.Distancia(6,9);
+		System.out.println("La distancia del origen al punto uno es de: "+Distancia);
+		
+		point p2 = new point(10,5);
+		System.out.println(p2.mensaje()+" x= "
+				+p2.getX()+", y= "+p2.getY());
+		p2.Distancia(12,8);
+		double Distancia1 = p2.Distancia(10,5);
+		System.out.println("La distancia del origen al punto uno es de: "+Distancia1);
+		
+		point p3 = new point(5,6);
+		System.out.println( p3.mensaje()+" x= "
+				+p3.getX()+", y= "+p3.getY());
+		p3.Distancia(6,6);
+		double Distancia2 = p3.Distancia(5,6);
+		System.out.println("La distancia del origen al punto uno es de: "+Distancia2);
+		
+	}
+	}
