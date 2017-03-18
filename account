@@ -1,0 +1,59 @@
+public class account {
+private int accountNumber;
+private double balance;
+
+public void contador(){
+	accountNumber = 757638350;
+	balance=0.0;
+}
+public account(int accountNumber, double balance){
+	this.accountNumber= accountNumber ;
+	this.balance = balance;
+}
+public account(int a){
+	accountNumber =a;
+}
+
+public  int getaccountNumber(){
+	return accountNumber;
+}
+public double getBalance(){
+	return balance;
+}
+public void setBalace(double b){
+	this.balance=balance;
+}
+public void credito(double amount1){
+	amount1 = 3995;
+}
+public void debito(double amount2){
+	amount2= 5995;
+}
+public String mensaje(){
+	String mensaje = "tu saldo es";
+	return mensaje;
+}
+}
+
+Aplicación
+package acount;
+
+public class akount {
+	public  static void  principales ( String [] args ) {
+		akount t1 =  new  akount ();
+	
+		System.out. println ( " Tu Cuenta = "
+		+ t1 . getaccountNumber () + " tu saldo es = " + t1 . getBalance () + t1 . Mensaje ());
+
+		akount t2 = new akount (22.222.222 , 222,2 );
+		
+		System.out. println ( " Tu Cuenta = "
+		+ t2 . getaccountNumber () + " tu  saldo es = " + t2 . getBalance () + t2 . Mensaje ());
+		
+	akount t3 =  new  akount ( 33.333.333 , 33,3 );
+		
+	System.out. println ( " Tu Cuenta = "
+			+ t3 . getaccountNumber () + " tu  saldo es = " + t3 . getBalance () + t3 . Mensaje ());
+	}
+	}
+
